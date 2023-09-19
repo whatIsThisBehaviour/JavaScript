@@ -38,8 +38,14 @@ console.log(n1);
 
 
 // Question 5 :- Use reduce to calculate factorial of a given number from an array of first n natural numbers (n belong to the number whose factorial needs to be calculated.)
+let numberFact = prompt("Enter the number you want factorial : ");
+numberFact = Number.parseInt(numberFact);
+let array = [];
+while (numberFact != 1) {
+    array.push(numberFact);
+    numberFact -=1;
+}
 
-let array = [1,2,3,4,5];
 let factArray = array.reduce((num1, num2) => {
     return num1 * num2;
 });
